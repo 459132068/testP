@@ -120,7 +120,7 @@ export default {
             headers: myHeaders,
             body: raw,
         };
-        fetch(`http://${this.api}.supermenus.cn/pad/order/GetData?op=${params.op}&v=${params.v}&mac=${params.mac}&time=${params.time}`, requestOptions)
+        fetch(`https://${this.api}.supermenus.cn/pad/order/GetData?op=${params.op}&v=${params.v}&mac=${params.mac}&time=${params.time}`, requestOptions)
         .then((response) => response.text())
         .then((result) => {
             this.responseStatus = `成功：${result}`
